@@ -132,7 +132,7 @@ aws iam create-policy-version \
 ![Access Key Created](screenshots/24-access-key-created-suspect-user-aws-compromise.png)
 *Suspect creates new access key (compromise starts)*
 
-![Configure AWS Profile](screenshots/25-suspect-configure-profile.png)
+![Configure AWS Profile](screenshots/suspect-configure-profile.PNG)
 *Profile set with stolen credentials*
 
 ![Verify Profile Setup](screenshots/27-suspect-profile-verify.png)
