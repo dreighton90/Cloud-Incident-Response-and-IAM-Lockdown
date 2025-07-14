@@ -66,3 +66,75 @@ aws iam create-policy-version \
 --profile suspect-profile
 
 ## 📸 Screenshots
+![CloudTrail Created](screenshots/01-cloudtrail-creation.png)
+*CloudTrail initialized for activity logging*
+
+![CloudTrail Logging Enabled](screenshots/03-enable-logging.png)
+*Logging turned on for governance and visibility*
+
+![EventBridge Rule Created](screenshots/04-eventbridge-rule-created.png)
+*EventBridge rule routes IAM change events*
+
+![CloudWatch Metric Filter Check](screenshots/08-cloudwatch-metric-check.png)
+*Verifying metric filter setup for CloudTrail log group*
+
+![Log Group Filter Fix](screenshots/11-cloudwatch-metric-filter-loggroup-fix.png)
+*Fixing filter destination for log group*
+
+![Root Login Alarm Configured](screenshots/15-cloudwatch-root-login-alarm-configured.png)
+*CloudWatch alarm monitors root account logins*
+
+![Email Alert Received](screenshots/16-root-login-alarm-email.png)
+*Email notification triggered by root login*
+
+![CloudTrail Root Event Detected](screenshots/18-cloudtrail-root-events.png)
+*Root login event captured in logs*
+
+![Suspect IAM User Exists](screenshots/19-iam-user-already-exists-suspect-user.png)
+*Suspicious user detected in IAM*
+
+![User Details Retrieved](screenshots/20-iam-get-user-suspect-user-details.png)
+*Getting user metadata and ARN*
+
+![User Has No Policies](screenshots/21-iam-check-user-policies-suspect-user-empty.png)
+*No policies initially attached to the user*
+
+![Admin Policy Added](screenshots/22-iam-attach-admin-policy-to-suspect-user.png)
+*Privilege escalation via AdministratorAccess*
+
+![Access Key Created](screenshots/24-access-key-created-suspect-user-aws-compromise.png)
+*Suspect creates new access key (compromise starts)*
+
+![Configure AWS Profile](screenshots/25-suspect-configure-profile.png)
+*Profile set with stolen credentials*
+
+![Verify Profile Setup](screenshots/27-suspect-profile-verify.png)
+*CLI confirms correct configuration*
+
+![Log Groups Queried](screenshots/28-identity-log-groups-output.png)
+*Attacker recon via CLI command*
+
+![Recon Filter Set](screenshots/29-put-metric-filter-recon.png)
+*Custom filter for recon pattern added*
+
+![Alarm Confirmed](screenshots/31-cloudwatch-alarm-confirmation..png)
+*Metric alarm created for suspicious recon*
+
+![SNS Alarm Triggered](screenshots/33-sns-recon-alarm.png)
+*Alert sent when threshold breached*
+
+![Escalation Filter Added](screenshots/34-filter-escalation.png)
+*Log filter added for escalation attempt*
+
+![Policy JSON for Lockdown](screenshots/36-policy-json..png)
+*Custom lockdown policy drafted*
+
+![Policy Created](screenshots/38-create-policy-v1.png)
+*Policy successfully deployed*
+
+![Alarm Triggers on Escalation](screenshots/39-create-policy-v2-alarm-trigger.png)
+*Alarm fires on policy misuse*
+
+![Threshold Breach Confirmed](screenshots/40-alarm-threshold-crossed.png)
+*CloudWatch confirms incident severity*
+
