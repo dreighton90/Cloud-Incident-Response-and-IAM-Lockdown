@@ -162,5 +162,5 @@ aws iam create-policy-version \
 ![Alarm Triggers on Escalation](screenshots/39-create-policy-v2-alarm-trigger.png)
 *Alarm fires on policy misuse*
 
-![Threshold Breach Confirmed](screenshots/40-alarm-threshold-crossed.png)
+![Threshold Breach Confirmed](screenshots/40-alarm-threshold-crossed.PNG)
 *CloudWatch confirms incident severity*
