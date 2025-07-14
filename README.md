@@ -164,6 +164,3 @@ aws iam create-policy-version \
 
 ![Threshold Breach Confirmed](screenshots/40-alarm-threshold-crossed.png)
 *CloudWatch confirms incident severity*
-
-![Alarm Threshold Crossed](screenshots/40-alarm-threshold-crossed.png)  
-*CloudWatch confirms incident severity*
